@@ -1,13 +1,70 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
-	
-<title>EmailLoginForm</title>
+  <title>Registration Form</title>
 </head>
-<body>
-<h1>Registration</h1>
+      <body>
+        <h1>My Registration Page</h1>
+         <form action="index.html" method="get" >
+            <div class="main-container">
+    
+      <!-- New Visitors -->
+              
+              <span>
+                  <h2>New Visitors</h2>
+                <div>
+                  <label for="Firstname">*Firstname</label>
+                </div>
+                  <input type="text" placeholder="first name">
+                <div>
+                  <label for="Lastname">*Lastname</label>
+                </div>
+                  <input type="text" placeholder="last name">
 
-<input type="text">
+
+              <section class="location">
+                <div id="address">
+                  <label for="address">*Address</label>
+                </div>
+                  <input type="text" placeholder="line 1"><br>                  
+                  <input type="text" placeholder="line 2"><br>
+                  <input type="text" placeholder="line 3">
+              </section>
+
+                <div>
+                  <label for="E-mail">*E-mail</label>
+                </div>
+                  <input type="text" placeholder="e-mail">
+                <div>
+                  <label for="Create-password">*Create Password</label>
+                </div>
+                <div>
+                  <input type="password" placeholder="password">
+                </div>
+                  <input type="password" placeholder="confirm password"><br>
+              </span>
+            <br>
+   
+      <!-- Existing Users -->
+
+              <span>
+                  <h2>Existing Users</h2>
+                <div>
+                  <label for="E-mail">*E-mail or Username</label>
+                </div>
+                  <input type="text" placeholder="e-mail or username">
+                <div>
+                  <label for="password">*Password</label>
+                </div>
+                  <input type="password" placeholder="password">
+              </span>              
+            </div>
+        </form>
+
+
+
+
+
 
 <script>
 
@@ -16,17 +73,47 @@
 </script>
 
 
+
+
+
+
+
 <style>
+
+body { 
+  background-color: #DAF7A6;
+}
+
 h1 {
   display: flex;
   justify-content: center;
+  font-family: consolas, serif;
+}
+
+h2 {
+  font-family: consolas, serif;
+  margin-bottom: 40px;
+}
+
+.main-container {
+  justify-content: space-evenly;
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+label {
+  font-size: 11px;
+  font-family: consolas, serif;
 }
 
 input {
+  margin: 10px 0px 10px 0px;
+  padding-left: 10px;
   width: 300px;
-  
-
+  height: 30px;
 }
+
 </style>
 
 
@@ -34,4 +121,4 @@ input {
 
 
 </body>
-<html>
+</html>
